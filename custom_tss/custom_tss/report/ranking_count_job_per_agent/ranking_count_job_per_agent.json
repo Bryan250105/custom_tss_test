@@ -1,0 +1,57 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2026-09-01 16:25:23.969641",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": null,
+ "modified": "2026-09-03 09:40:29.986421",
+ "modified_by": "Administrator",
+ "module": "Custom TSS",
+ "name": "Ranking Count Job per Agent",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT agent AS Agent, COUNT(agent) as 'Job Shipment Count'\nFROM `tabJob Shipment`\nGROUP BY agent\nORDER BY COUNT(agent) DESC\n\n",
+ "ref_doctype": "Job Shipment",
+ "reference_report": "",
+ "report_name": "Ranking Count Job per Agent",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Forwarding User"
+  },
+  {
+   "role": "Forwarding Sales Staff User"
+  },
+  {
+   "role": "Forwarding CS Staff User"
+  },
+  {
+   "role": "Forwarding EMKL Staff User"
+  },
+  {
+   "role": "Forwarding Manager User"
+  },
+  {
+   "role": "Forwarding Manager User"
+  },
+  {
+   "role": "Forwarding Sales Manager User"
+  },
+  {
+   "role": "Forwarding Documentation Staff User"
+  }
+ ],
+ "timeout": 0
+}
